@@ -1,0 +1,94 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #75b09c;
+    margin: 0;
+}
+
+h1,
+p {
+    color: #333;
+}
+
+div[x-data] {
+    background-color: #d8f793;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+div[x-data]:hover {
+    transform: translateY(-5px);
+}
+
+button {
+    background-color: #ff7f50;
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 127, 80, 0.5);
+}
+
+input[type="text"] {
+    padding: 0.75rem;
+    border: 2px solid #ff7f50;
+    border-radius: 25px;
+    width: calc(100% - 1.5rem);
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.li {
+    background-color: #333;
+    padding: 0.75em;
+    margin: 0.5em 0;
+    border: radius 15px;
+    font-size: 1em;
+}
+
+div[x-data] div[x-show] {
+    background-color: #ffebcd;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+
+.template p {
+    margin: 0;
+}
+
+.template button {
+    background-color: #32cd32;
+    margin: 0.5rem 0;
+}
+
+.template button:hover {
+    background-color: #228b22;
+}

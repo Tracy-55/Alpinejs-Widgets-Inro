@@ -9,12 +9,15 @@
 </head>
 <body>
     <div class="container">
-        <div x-data="{ count: 0 }" class="counter-widget">
+        <div x-data="{ count: 0, max:10}" class="counter-widget">
             <h1>Counter</h1>
+
             <div class="counter" x-text="count"></div>
+
             <div class="buttons">
                 <button @click="count++" class="increment">+</button>
-                <button @click="count--" class="decrement">-</button>
+                <button @click="count = 0" class="decrement">-</button>
+                <button @click="count = 0">Reset</button>
             </div>
         </div>
     </div>
